@@ -12,6 +12,8 @@ import {
 } from "react-router-dom";
 import About from "./components/Extras/About";
 import PageNotFound from "./components/Extras/PageNotFound";
+import ProductListing from "./components/ProductListings/ProductListing";
+import ProductDetails from "./components/ProductDetails/ProductDetails";
 
 export class App extends Component {
 
@@ -25,10 +27,11 @@ export class App extends Component {
                     <Routes>
                         <Route path="*" element={<PageNotFound/>}/>
                         <Route path="/" element={<ProductListings/>}/>
-                        <Route path="/home" element={<ProductListings/>}/>
+
                         <Route path="/about" element={<About/>}/>
                         <Route path="/newlisting" element={<ProductForm/>}/>
-
+                        <Route path="/listings" element={<ProductListings/>}/>
+                        <Route path="/listings/:listingsId" element={<ProductDetails/>}/>
                     </Routes>
                 </BrowserRouter>
             </div>
