@@ -14,7 +14,7 @@ export class ProductListing extends Component {
             <div>
                 <h3>{this.props.product.title}</h3>
                 <img src={process.env.PUBLIC_URL + this.props.product.images}/>
-                <p>Blah Blah Blah</p>
+                <p>{this.props.product.description}</p>
             </div>
         )
     }
