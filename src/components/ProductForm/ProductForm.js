@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import {Col} from "react-bootstrap";
 
 export class ProductForm extends Component {
     render() {
         return(
-            <div>
+            <div /*style = {{paddingLeft:"35%", paddingRight:"35%"}}*/ >
                 <h1>Add Product Detail</h1>
-                <p>Blah Blah Blah</p>
                 <Form>
-                    <Form.Group className="mb-3" controlId="formBasicTitle" /*style={{position:relative}}*/>
+                    <div>
+                    <Form.Group className="mb-3" controlId="formBasicTitle">
                         <Form.Label>Title</Form.Label>
                         <Form.Control type="title" placeholder="Enter title of your listing" />
                     </Form.Group>
@@ -19,11 +20,12 @@ export class ProductForm extends Component {
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicPrice">
                         <Form.Label>Price</Form.Label>
-                        <Form.Control type="Price" placeholder="Cost per pounds" />
+                        <Form.Control type="Price" placeholder="Cost per pound" />
                     </Form.Group>
                     {/*<Button variant="outline-info" type="submit">*/}
                     {/*    Add Image*/}
                     {/*</Button>*/}
+
                     <Form.Group className="mb-3" controlId="formBasicLocation">
                         <Form.Label>Location</Form.Label>
                         <Form.Control type="Location" placeholder="City, State" />
@@ -44,6 +46,10 @@ export class ProductForm extends Component {
                         <Form.Label>Add Image</Form.Label>
                         <Form.Control type="file" />
                     </Form.Group>
+                    <Button variant="info" type="submit">
+                        Add Product
+                    </Button>
+                    </div>
                 </Form>
             </div>
         )
