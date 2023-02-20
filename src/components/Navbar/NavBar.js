@@ -10,7 +10,7 @@ export class NavBar extends Component {
                 <img src={process.env.PUBLIC_URL + "img/logo.png"} width={200} style={{paddingLeft: "40px"}}/>
 
                 <Nav className="me-auto" style={{paddingLeft: "40px"}}>
-                    <Nav.Link href="/home">Listings</Nav.Link>
+                    <Nav.Link href="/listings">Listings</Nav.Link>
                     <Nav.Link href="/about">About</Nav.Link>
                 </Nav>
 
