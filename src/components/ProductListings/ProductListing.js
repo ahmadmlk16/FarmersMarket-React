@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import button from 'bootstrap'
+import {Card, Row} from "react-bootstrap";
+import Button from "react-bootstrap/Button";
 
 export class ProductListing extends Component {
 
@@ -11,11 +13,23 @@ export class ProductListing extends Component {
 
     render() {
         return(
-            <div>
-                <h3>{this.props.product.title}</h3>
-                <img src={process.env.PUBLIC_URL + this.props.product.images}/>
-                <p>{this.props.product.description}</p>
-            </div>
+            // <Button >
+
+            <Card style={{ width: '18rem',height:"18rem", margin:"1rem"}}>
+                <Card.Img variant="top" src={this.props.product.images} style={{ width: '18rem',height:"10rem"}}/>
+                <Card.Body>
+                    <div style={{display:"flex"}}>
+                        <p style={{paddingRight:"1rem"}}>{this.props.product.title}</p>
+                        <p>{this.props.product.price}</p>
+                    </div>
+                    <Card.Text>
+                        {this.props.product.description}
+                    </Card.Text>
+
+                </Card.Body>
+            </Card>
+
+
         )
     }
 }
