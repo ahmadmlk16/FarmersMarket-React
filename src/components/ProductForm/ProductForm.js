@@ -6,7 +6,7 @@ import {Col} from "react-bootstrap";
 export class ProductForm extends Component {
     render() {
         return(
-            <div /*style = {{paddingLeft:"35%", paddingRight:"35%"}}*/ >
+            <div style = {{paddingLeft:"35%", paddingRight:"35%"}} >
                 <h1>Add Product Detail</h1>
                 <Form>
                     <div>
