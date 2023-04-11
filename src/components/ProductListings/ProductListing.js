@@ -16,7 +16,7 @@ export class ProductListing extends Component {
         return(
             <Link to={`/listings/${this.props.product.productId}`} style={{textDecoration:"none"}}>
             <Card style={{ width: '18rem',height:"18rem", margin:"1rem"}}>
-                <Card.Img variant="top" src={this.props.product.images} style={{ width: '18rem',height:"10rem"}}/>
+                <Card.Img variant="top" src={this.props.product.images} style={{ width: 'auto',height:"10rem"}}/>
                 <Card.Body>
                     <div style={{display:"flex"}}>
                         <p style={{paddingRight:"1rem"}}>{this.props.product.title}</p>
