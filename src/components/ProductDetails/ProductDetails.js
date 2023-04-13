@@ -20,18 +20,18 @@ function ProductDetails() {
                 <Col style={{textAlign:"left", }} >
                     <Row>
                         <Col xs={8}><h3 >{thisProduct.title + "(" + thisProduct.price + ")" } </h3></Col>
-                        <Col><p style={{textAlign:"right", paddingTop:"0.65rem"}}>Listed: {thisProduct.listingDate}</p></Col>
+                        <Col><p  className={"Listing-Date"} style={{textAlign:"right", paddingTop:"0.65rem"}}>Listed: {thisProduct.listingDate}</p></Col>
                     </Row>
                     <Row style={{height:"16rem"}}>
-                        <p>{thisProduct.description}</p>
+                        <p className={"Description"}>{thisProduct.description}</p>
                     </Row>
 
                     <Row style={{textAlign:"left", }}>
-                        <h4>Contact Info</h4>
-                        <p>Contact Name: {thisProduct.contactName}</p>
-                        <p>Phone Number: {thisProduct.phoneNumber}</p>
-                        <p>Email Address: {thisProduct.emailAddress}</p>
-                        <p>Address: {thisProduct.location}</p>
+                        <h4 className={"Contact-Info"}>Contact Info</h4>
+                        <p className={"Contact-Name"}>Contact Name: {thisProduct.contactName}</p>
+                        <p className={"Phone-Number"}>Phone Number: {thisProduct.phoneNumber}</p>
+                        <p className={"Email"}>Email Address: {thisProduct.emailAddress}</p>
+                        <p className={"Address"}>Address: {thisProduct.location}</p>
                     </Row>
                     <Row >
 
