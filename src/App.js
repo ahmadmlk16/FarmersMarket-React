@@ -27,7 +27,6 @@ export class App extends Component {
                     <Routes>
                         <Route path="*" element={<PageNotFound/>}/>
                         <Route path="/" element={<ProductListings/>}/>
-
                         <Route path="/about" element={<About/>}/>
                         <Route path="/newlisting" element={<ProductForm/>}/>
                         <Route path="/listings" element={<ProductListings/>}/>
