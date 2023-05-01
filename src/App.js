@@ -23,7 +23,7 @@ export class App extends Component {
             <div className="App">
 
                 <NavBar/>
-                <BrowserRouter>
+
                     <Routes>
                         <Route path="*" element={<PageNotFound/>}/>
                         <Route path="/" element={<ProductListings/>}/>
@@ -32,7 +32,7 @@ export class App extends Component {
                         <Route path="/listings" element={<ProductListings/>}/>
                         <Route path="/listings/:listingsId" element={<ProductDetails/>}/>
                     </Routes>
-                </BrowserRouter>
+
             </div>
         );
     }
